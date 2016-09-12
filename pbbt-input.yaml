@@ -1,0 +1,10 @@
+title: CSV.TOOLKIT
+tests:
+  - sh: pip install --quiet coverage nose flake8
+    ignore: true
+
+  - sh: nosetests --quiet
+    ignore: true
+
+  # check Python source syntax and style
+  - sh: flake8 ./src/
